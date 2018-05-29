@@ -1,4 +1,4 @@
-class My_input 
+class Header 
   attr_reader  :header_1,
                :header_2,
                :header_3,
@@ -17,47 +17,28 @@ class My_input
   
   def header_1
     "# This is Header 1.".gsub("#", "<h1>")
+    "<h1> This is Header 1.".insert(-1, "</h1>")
   end
   
   def header_2
     "## This is Header 2.".gsub("##", "<h2>")
+    "<h2> This is Header 2.".insert(-1, "</h2>")
   end 
   
   def header_3
     "### This is Header 3.".gsub("###", "<h3>")
+    "<h3> This is Header 3.".insert(-1, "</h3>")
   end 
   
   def header_4
     "#### This is Header 4.".gsub("####", "<h4>")
+    "<h4> This is Header 4.".insert(-1, "</h4>")
   end 
   
   def header_5
     "##### This is Header 5.".gsub("#####", "<h5>")
+    "<h5> This is Header 5.".insert(-1, "</h5>")
   end 
   
-  def paragraph
-    "To make a soft break, you need to insert 2 spaces after each line.  If this is done properly, the text will appear on separate lines.  Since we have done it twice, there should be 3 lines."
-  end 
-  
-  def underline_text
-    "This is to test the _underline_ method."
-  end 
-  
-  def bold_text
-    "This is to test the **bold** method."
-  end 
-  
-  def unordered_list
-    "My favorite cuisines are 
-    * Sushi
-    * Barbeque
-    * Mexican"
-  end 
-  
-  def ordered_list 
-    "My favorite cusines are 
-    1. Sushi
-    2. Barbeque 
-    3. Mexican"
-  end 
+
 end
