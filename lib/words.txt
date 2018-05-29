@@ -1,0 +1,23 @@
+# This is Header 1.
+## This is Header 2.
+### This is Header 3.
+#### This is Header 4.
+##### This is Header 5.
+
+To make a soft break, you need to insert 2 spaces after each line."  "  If this is done properly, the text will appear on separate lines."  "  Since we have done it twice, there should be 3 lines.
+
+This is to test the _underline_ method.
+
+This is to test the **bold** method.
+
+My favorite cuisines are:
+
+* Sushi
+* Barbeque
+* Mexican
+
+My favorite cuisines are:
+
+1. Sushi
+2. Barbeque
+3. Mexican
