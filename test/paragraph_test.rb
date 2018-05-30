@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/paragraph'
+require './lib/header'
 
 
 class ParagraphTest < Minitest::Test 
@@ -15,7 +16,7 @@ class ParagraphTest < Minitest::Test
     assert_equal "<p>This is the first line of the paragraph.</p>", paragraph.p_tags
   end
   
-  def test_it_can_have_two_line_paragraphs
+  def test_it_can_have_two_line_paragraphs_run_as_one_line
     paragraph = Paragraph.new 
     assert_equal "<p>This is the first line of the paragraph.  This is the second line of the paragraph.</p>", paragraph.two_line_paragraph  
   end 
@@ -25,5 +26,9 @@ class ParagraphTest < Minitest::Test
     assert_equal "<p>This is the first line of the paragraph.</p>\n\n""<p>This is the second line of the paragraph.</p>", paragraph.multiple_line_paragraph
   end 
   
-
+  def test_it_can_have_header_tags_plus_paragraph
+    paragraph = Paragraph.new 
+    assert_equal "<h1>Header</h1>\n\n""<p>followed by text</p>", paragraph.all_paragraph 
+  end
+  
 end
