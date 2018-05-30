@@ -19,7 +19,7 @@ class HeaderTest < Minitest::Test
     header = Header.new
     assert_equal "<h2> This is Header 2.</h2>", header.header_2
   end
-
+  
   def test_header_3
     header = Header.new
     assert_equal "<h3> This is Header 3.</h3>", header.header_3
@@ -34,6 +34,5 @@ class HeaderTest < Minitest::Test
     header = Header.new
     assert_equal "<h5> This is Header 5.</h5>", header.header_5
   end
-  
   
 end
