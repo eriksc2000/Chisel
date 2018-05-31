@@ -14,4 +14,8 @@ class Format
     "My *emphasized* and stronged text is awesome.".gsub("*", "<em>")
   end 
   
+  # def underline_and_bold_text 
+  #   "My *emphasized and **stronged** text* is awesome.".gsub("*", "<em>")
+  # end 
+  
 end

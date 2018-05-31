@@ -1,5 +1,5 @@
-class OrderList
-  attr_reader  :orderlist, 
+class UnorderedList
+  attr_reader  :unorderedlist, 
                :paragraph, 
                :beginning_p,
                :ending_p,
@@ -9,7 +9,7 @@ class OrderList
                :ending_line
               
   def initialize
-    @orderlist = orderlist 
+    @unorderedlist = unorderedlist 
     @paragraph = paragraph
     @beginning_p = "<p>"
     @ending_p = "</p>"

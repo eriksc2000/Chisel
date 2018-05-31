@@ -20,5 +20,9 @@ class FormatTest < Minitest::Test
     assert_equal "My <em>emphasized<em> and stronged text is awesome.", format.underline_text
   end 
   
+  # def test_it_can_underline_and_bold_text
+  #  format = Format.new 
+  #  assert_equal "My <em>emphasized and <strong>stronged<strong> text<em> is awesome.", format.underline_and_bold_text 
+  # end 
   
 end
